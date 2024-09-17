@@ -27,7 +27,7 @@ body{
     display: none;
 }
 .hero-section{
-    background-image: url("/Assessment-1-Responsive-Landing-Page/public/assets/images/Rectangle 1.png");
+    background-image: url("public/assets/images/Rectangle 1.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
