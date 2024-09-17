@@ -1,0 +1,621 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    --pink : #F64C72;
+    --purple :#553D67;
+    --grey: #6D7D8B;
+    --lightgrey: #BBC8D4;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Mulish", sans-serif;
+    --contentFont: "Open Sans", sans-serif;
+}
+body{
+    width: 100vw;
+    margin: 0;
+}
+.logoNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+}
+.navlinks{
+    display: none;
+}
+.hero-section{
+    background-image: url("/Assessment-1-Responsive-Landing-Page/assets/images/Rectangle 1.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-section h1{
+    font-size: 4em;
+    margin: 77px 30px 0 30px;
+}
+.hero-section p{
+    font-family: var(--contentFont);
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: 20px;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 171px;
+}
+.connect input {
+    width: 302px;
+    height: 52.85px;
+    border: 1.89px solid var(--lightgrey);
+    border-radius: 3.77px;
+}
+.connect input::placeholder{
+    font-size: 1.51em;
+    color: var(--lightgrey);
+    padding-left: 15.1px;
+}
+.connect button{
+    padding: 15px 34px;
+    color: white;
+    background-color: var(--pink);
+    border-radius: 3.77px;
+    border: none;
+    height: 52.85px;
+    font-size: 1.51em;
+}
+.about-us{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px 0px #7E616140;
+    z-index: 2;
+    margin-top: -60px;
+    background-color: white;
+}
+h3{
+    padding: 50px 54px 0 53px;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 37.65px;
+    color: var(--purple);
+    margin-bottom: 16px;
+}
+.underline{
+    width: 156px;
+    border: 2px solid var(--pink);
+}
+h6{
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: var(--contentFont);
+    color: var(--grey);
+    margin:48px 21px 83px 21px;
+    padding: 0px;
+    text-align: center;
+    line-height: 26.1px;
+}
+.tickmarks{
+    display: none;
+}
+.features{
+    margin-top: 96.74px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25.59px;
+}
+h4 {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    line-height: 1.5; 
+    padding-top: 0.5rem;
+    color: var(--purple);
+    margin: 0;
+}
+
+.card {
+    width: 60%;
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0px 0.5rem 0.75rem 0px #06000040;
+    padding-top: 2rem;
+    background-color: white;
+}
+
+.card h6 {
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.achievements{
+    text-align: center;
+    flex-flow:column wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    color: white;
+    margin-top: -80px;
+    padding-top:119.5px;
+    padding-bottom: 119.5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 36.65px;
+    margin: 0;
+}
+.achievements h6 , .mission h6{
+    margin: 21px 30px 27px 30px;
+    color: white;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+.stat h2{
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 50.2px;
+}
+.stat span{
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 21.08px;
+}
+.what-do-we-do{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+    padding-bottom: 88.97px;
+}
+.what-do-we-do .card-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.what-do-we-do .heading , .team .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.what-do-we-do h3{
+    padding: 68.59px 21px 0 21px;
+}
+.what-do-we-do .card{
+    height: 331.04px; 
+    width: 307.57px;
+}
+.our-mission{
+    display: flex;
+}
+#i{
+    display: none;
+}
+.mission{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    color: white;
+    padding-top:121px ;
+    padding-bottom: 121px;
+}
+.mission button{
+    margin-top: 65px;
+    padding: 16px 47px;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.mission h6{
+    margin-bottom: 0px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.figureCard {
+    flex: 0 0 auto;
+    text-align: left;
+    width: 200.68px;
+    height: 310.63px;
+    box-shadow: 0px 6.64px 9.96px 0px #655A5A40;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.figureCard p{
+    width: 270px;
+    height:371px ;
+}
+
+#name {
+    padding-left: 13.27px;
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 19.99px;
+    color: var(--purple);
+}
+
+#role {
+    padding-left: 13.27px;
+    color: var(--grey);
+    font-size: 0.929em;
+    line-height: 13.99px;
+    font-weight: 600;
+}
+
+.figureCard h6 {
+    text-align: left;
+    margin: 8.58px 13.27px 31.4px 13.27px;
+    color: #697694;
+    font-size: 1.062em;
+    font-weight: 400;
+    line-height: 17.33px;
+}
+
+.team p {
+    font-size: 2.178em;
+    font-family: var(--contentFont);
+    font-weight: 600;
+    color: var(--purple);
+    margin-top: 55.64px;
+}
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.people {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+    scroll-snap-type: x mandatory;
+    max-width: 80vw;
+    padding: 10px;
+}
+
+.people::-webkit-scrollbar {
+    display: none;
+}
+
+.people {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.people .feedbackCard {
+    scroll-snap-align: start; 
+    min-width: 308px;
+    flex-shrink: 0;
+}
+
+.feedback h6 {
+    text-align: left;
+    font-size: 1.511em;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 22.66px;
+}
+
+.feedbackCard {
+    flex: 0 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 380px;
+    width: 308px;
+    padding-top: 60px;
+    padding-left: 38.6px;
+    box-shadow: 0px 8.39px 12.59px 0px #655A5A40;
+    background-color: #fff;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    gap: 15.4px;
+    margin-top: 30px;
+}
+
+.profile p {
+    font-size: 1.511em;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.profile span {
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.769em;
+}
+
+@media (max-width: 768px) {
+    .people {
+        gap: 15px;
+    }
+    .feedbackCard {
+        min-width: 270px;
+    }
+    .team .card-grp {
+        gap: 15px;
+    }
+
+    .figureCard {
+        min-width: 270px;
+    }
+}
+
+.navArrows{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    margin-right: 20%;
+    margin-top: 3.185em;
+    margin-bottom: 50px;
+}
+.contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    text-align: center;
+    padding-top: 95px;
+}
+.contact h5{
+    font-size: 3.649em;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 31px;
+}
+.contact input{
+    margin-top: 50px;
+    margin-bottom: 86px;
+    width: 267px;
+    height: 48px;
+    border: 1.89px solid var(--lightgrey);
+    border-radius: 3.77px;
+}
+.contact input::placeholder{
+    font-size: 1em;
+    padding: 10px 0 9px 16px
+}
+.contact h6{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--purple);
+    font-weight: var(--contentFont);
+    gap: 32px;
+}
+
+footer p{
+    font-size: 1.4em;
+    font-weight: 400;
+    width: fit-content;
+}
+.hr , .tickmark-item{
+    display: none;
+}
+@media all and (min-width: 725px){
+    .team .card-grp {
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        gap: 25px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        max-width: 100vw;
+    }
+    
+    .team .card-grp::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .team .figureCard {
+        
+        scroll-snap-align: start; 
+    }
+    .contact h6{
+        width: 50%;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logoNav {
+        display: flex;
+        flex-direction: column;
+    }
+    .logoNav #a {
+        display: none;
+    }
+
+    .logoNav #b {
+        width: 120px;
+        height: 120px;
+    }
+    .navlinks{
+        width: 70%;
+        display: flex;
+        justify-content:  space-around;
+        align-items: center;
+        
+    }
+    .navlinks a{
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: 400;
+        color: var(--purple);
+    }
+    .hero-section h1 , p{
+        width: 50%;
+    }
+    .about-us h6{
+        width: 70%;
+    }
+    .tickmarks{
+        position: relative;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        margin-top: -30px;
+    }
+    .hr{
+        display: flex;
+       
+        top: 460px;
+        width: 95%;
+        height: 0px;
+        border: 1px solid var(--purple);
+    }
+    .tickmarks{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 87px;
+    }
+    .tickmark-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 1.8em;
+        font-weight: 400;
+        font-family: var(--contentFont);
+        color: var(--grey);
+        margin-top: 10px;
+        gap: calc(20%);
+    }
+   
+    .figureCard{
+        width: 347px;
+        height: 468px;
+    }
+    .team heading{
+        padding-left: -140px !important;
+    }
+    .team{
+        overflow-x: hidden;
+    }
+    .team .wrapper{
+        padding-left: 140px;
+    }
+    
+    .team .card-grp .figureCard img{
+        width:347px ;
+        height: 248px;
+    }
+    .info{
+        margin-top: 28px;
+    }
+    #role{
+        font-size: 1.4em;
+    }
+    .info h6{
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 26.1px;
+    }
+   
+    h3, .what-do-we-do h3 {
+        font-size: 4.8em;
+        padding-bottom: 20px;
+    }
+    
+    .card{
+        width: 373px;
+    }
+}
+
+@media all and (max-width : 530px){
+    .stat{
+        padding: 0 10px;
+    }
+}
+
+@media all and(min-width:900px){
+    .hr , .tickmarks ,.tickText{
+        display: none;
+    }
+    .what-do-we-do .card-grp{
+        padding-left: 50%;
+        padding-right: 5000px;
+    }
+}
+
+@media all and (min-width: 1110px){
+    .features{
+        flex-direction: row;
+    }
+    .about-us{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .what-do-we-do .card{
+        width: calc(30% - 25px); 
+    }
+     #i{
+        display: block ;
+    }
+    
+}
+
